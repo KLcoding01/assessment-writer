@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Assessment Writer: Privacy Policy</title>
+<style>
+  :root { --text: #16202a; --muted: #5b6875; --accent: #0f766e; --bg: #ffffff; --line: #d9dee4; }
+  @media (prefers-color-scheme: dark) { :root { --text: #e6ebf0; --muted: #97a3af; --accent: #2dd4bf; --bg: #0f1419; --line: #2d3844; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 18px; margin: 32px 0 8px; color: var(--accent); }
+  p, li { color: var(--text); }
+  .meta { color: var(--muted); font-size: 14px; margin: 0 0 24px; }
+  ul { padding-left: 20px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  @media (max-width: 560px) { table, thead, tbody, tr, th, td { display: block; } thead { display: none; } td { border: 0; padding: 2px 0; } tr { border-bottom: 1px solid var(--line); padding: 8px 0; } td:first-child { font-weight: 600; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Assessment Writer: Privacy Policy</h1>
+  <p class="meta">Effective September 27, 2026</p>
+
+  <p>Assessment Writer is a Chrome extension that drafts the Assessment section of a physical or occupational therapy daily note. This policy explains what it does with information. The short version: it has no server, and its developer never receives your data.</p>
+
+  <h2>What the extension handles</h2>
+  <table>
+    <thead><tr><th>Information</th><th>Where it goes</th><th>Where it is kept</th></tr></thead>
+    <tbody>
+      <tr><td>Clinical text you paste into the panel</td><td>Sent directly from your browser to Anthropic's API when you press Write, to generate the draft</td><td>In your browser's session storage while the note is open; cleared when the browser quits</td></tr>
+      <tr><td>Your Anthropic API key</td><td>Sent only to Anthropic, as the credential for your requests</td><td>In your browser's extension storage until you remove it</td></tr>
+      <tr><td>Your last five generated assessments</td><td>Sent to Anthropic with your next request, so new drafts don't repeat them (you can turn this off)</td><td>In your browser's extension storage until you clear them</td></tr>
+      <tr><td>Settings and the date you accepted the user agreement</td><td>Nowhere</td><td>In your browser's extension storage</td></tr>
+    </tbody>
+  </table>
+
+  <h2>What the extension does not do</h2>
+  <ul>
+    <li>It does not read any web page, including your EMR. It has no access to page content.</li>
+    <li>It does not send anything to the developer. There is no Assessment Writer server, account, analytics or tracking.</li>
+    <li>It does not sell, share or transfer your information to anyone except Anthropic, and only to generate the draft you asked for.</li>
+    <li>It does not use your information for advertising, profiling, creditworthiness or any purpose other than drafting your note.</li>
+  </ul>
+
+  <h2>Anthropic</h2>
+  <p>Requests are made to Anthropic under your own API account, and Anthropic handles them under its own terms and privacy policy (<a href="https://www.anthropic.com/legal/privacy">anthropic.com/legal/privacy</a>). Your agreement with Anthropic governs how it stores and uses what you send.</p>
+
+  <h2>Patient information</h2>
+  <p>The extension is meant to be used with de-identified text. Before you use it, you agree to remove all patient identifiers (the 18 HIPAA Safe Harbor identifiers) from anything you paste, and not to send protected health information unless you or your organization has a Business Associate Agreement with Anthropic covering your API account. The extension checks for common identifiers before sending, but the check cannot catch everything, and de-identification remains your responsibility. The developer is not a business associate of any user and receives no patient information.</p>
+
+  <h2>Deleting your information</h2>
+  <p>In the extension's Settings: <strong>Remove key</strong> deletes your API key, <strong>Forget them</strong> deletes your saved assessments, and <strong>Withdraw and erase</strong> deletes all of it along with the note in progress. Uninstalling the extension deletes everything it stored.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be posted here with a new effective date. A material change to what the extension sends will also be shown in the extension, and you will be asked to accept it before continuing.</p>
+
+  <h2>Contact</h2>
+  <p>Questions: <a href="mailto:infoptchrome@gmail.com">infoptchrome@gmail.com</a></p>
+</main>
+</body>
+</html>
